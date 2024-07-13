@@ -2,9 +2,13 @@ import { Schema, model } from "mongoose";
 
 const transactionSchema = new Schema(
   {
-    ammount: {
-      type: Number,
+    title:{
+      type: String,
       required: true,
+    },
+    ammount:{
+      type:Number,
+      required: true
     },
     category: {
       type: String,

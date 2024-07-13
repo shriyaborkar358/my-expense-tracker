@@ -4,6 +4,9 @@ import cors from "cors";
 import dotenv from "dotenv";
 dotenv.config();
 
+import { postSignup, postLogin } from "./controllers/user.js";
+import { postTransaction } from "./controllers/transaction.js";
+
 const app = express();
 app.use(express.json());
 app.use(cors());
@@ -22,6 +25,12 @@ app.get("/", (req, res) => {
     message: "Welcome to my expense tracker",
   });
 });
+
+app.post("/signup", postSignup);
+
+app.post("/login", postLogin);
+
+app.post("/transaction", postTransaction);
 
 const PORT = process.env.PORT || 5000;
 
