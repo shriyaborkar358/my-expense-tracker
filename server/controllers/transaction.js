@@ -11,7 +11,7 @@ const postTransaction = async (req, res) => {
     type,
     user,
   });
-
+ 
   try {
     const savedTransaction = await transaction.save();
 
