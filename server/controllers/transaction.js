@@ -30,7 +30,7 @@ const postTransaction = async (req, res) => {
 };
 
 const getTransactions = async (req, res) => {
-  const {userId} = req.query;
+  const { userId } = req.query;
 
   const user = await User.findById(userId);
 
@@ -38,11 +38,11 @@ const getTransactions = async (req, res) => {
     return res.json({
       success: false,
       message: `User not found`,
-      data: null
+      data: null,
     });
   }
 
-  const transactions = await Transaction.find({user:userId});
+  const transactions = await Transaction.find({ user: userId });
 
   res.json({
     success: true,
