@@ -73,7 +73,7 @@ function Signup() {
           Register
         </button>
 
-        <Link to="/" className="auth-link">
+        <Link to="/login" className="auth-link">
           Already have an Account? Login
         </Link>
       </form>

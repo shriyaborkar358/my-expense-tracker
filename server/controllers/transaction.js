@@ -42,13 +42,25 @@ const getTransactions = async (req, res) => {
     });
   }
 
-  const transactions = await Transaction.find({ user: userId });
+  const transactions = await Transaction.find({ user: userId }).sort({createdAt: -1})
 
   res.json({
     success: true,
     message: "User fetched successfully",
-    data: transactions,
+    data: transactions
   });
 };
 
-export { postTransaction, getTransactions };
+const deleteTrnsaction = async (req, res) =>{
+  const {id} = req.params;
+
+  await Transaction.deleteOne({_id:id});
+
+  res.json({
+    success:true,
+    message:"Transaction deleted successfully",
+    data: null
+  })
+}
+
+export { postTransaction, getTransactions, deleteTrnsaction};

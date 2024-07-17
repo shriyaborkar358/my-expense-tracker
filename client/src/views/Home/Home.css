@@ -1,0 +1,66 @@
+.heading-container {
+  margin-bottom: 50px;
+}
+
+.home-greeting {
+  font-size: 35px;
+  margin: 0;
+  color: white;
+}
+
+.home-heading {
+  color: #ffb3da;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.home-logout {
+  position: fixed;
+  color: #ffb3da;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.net-transactions-values {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
+.net-transactions-value-item {
+  width: 200px;
+  border: 3px dotted #f7f8f9;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.net-transactions-value-title {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.net-transactions-value-amount {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.transactions-container {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.transaction-icon {
+  height: 70px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+

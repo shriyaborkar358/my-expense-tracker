@@ -62,7 +62,7 @@ function Login() {
           Login Now
         </button>
 
-        <Link to="/" className="auth-link">
+        <Link to="/signup" className="auth-link">
           Don't have an Account? Signup
         </Link>
       </form>
