@@ -24,7 +24,7 @@ function Login() {
       toast.loading("Redirecting to dashboard...");
 
       setTimeout(() => {
-        window.location.href = "/";
+        window.location.href = "";
       }, 3000);
     } 
     
