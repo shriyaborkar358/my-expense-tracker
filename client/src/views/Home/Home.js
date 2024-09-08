@@ -5,6 +5,8 @@ import axios from "axios"
 import TransactionCard from "../../components/TransactionCard/TransactionCard"
 import AddImg from "./add-icon.png"
 import { Link } from "react-router-dom"
+import Navbar from "../../components/Navbar/Navbar"
+import Footer from "../../components/Footer/Footer"
 
 function Home() {
   const [user, setUser] = useState('')
@@ -60,23 +62,13 @@ function Home() {
 
   }, [transactions])
 
-  return (
+  return (<>
+    <Navbar/>
     <div className="background-image">
       <div className="heading-container">
       <span className='home-greeting'>Hello {user.fullName}</span>
       <span className='home-heading'>Welcome to the Expense Tracker</span>
       </div>
-
-      <span className='home-logout' onClick={() => {
-        localStorage.clear()
-        toast.success('Logged out successfully')
-
-        setTimeout(()=>{
-          window.location.href = '/login'
-        }, 3000)
-      }}>
-        Logout
-      </span>
 
       <div className='net-transactions-values'>
 
@@ -134,7 +126,8 @@ function Home() {
 
       <Toaster />
     </div>
-  )
+    <Footer/>
+    </>)
 }
 
 export default Home

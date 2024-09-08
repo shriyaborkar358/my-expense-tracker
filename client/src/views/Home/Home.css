@@ -1,5 +1,6 @@
 .heading-container {
-  margin-bottom: 50px;
+  margin: 10px 0;
+  text-align: center;
 }
 
 .home-greeting {
@@ -52,7 +53,7 @@
 }
 
 .transactions-container {
-  max-height: 500px;
+  max-height: 450px;
   overflow-y: scroll;
 }
 

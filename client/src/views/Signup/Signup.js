@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import "./Signup.css";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import { Link } from "react-router-dom";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 function Signup() {
   const [user, setUser] = useState({
@@ -36,7 +37,9 @@ function Signup() {
     }
   };
 
-  return (
+  return (<>
+
+  <Navbar/>
     <div className="background-image">
       <h1 className="auth-heading"> User Registration</h1>
 
@@ -80,7 +83,8 @@ function Signup() {
 
       <Toaster />
     </div>
-  );
+    <Footer/>
+    </>);
 }
 
 export default Signup;

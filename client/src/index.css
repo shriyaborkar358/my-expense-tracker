@@ -1,14 +1,11 @@
 body{
-  padding: 0;
-  margin: 0;
-}
-
-.background-image {
   background-image: url("./login-signup-bg-img.jpg");
   background-size: cover;
   height: 100vh;
   width: 100%;
   padding-top: 5px ;
+  padding: 0;
+  margin: 0;
 }
 
 .auth-heading {
@@ -18,10 +15,11 @@ body{
 }
 
 .auth-form {
-  width: 400px;
+  width: 450px;
   margin: 30px auto;
   padding: 30px 50px;
   box-shadow: 0 0 10px rgb(197, 193, 193);
+  border-radius: 10px;
 }
 
 .auth-input {

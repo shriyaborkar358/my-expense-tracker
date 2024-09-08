@@ -6,6 +6,8 @@ import Home from "./views/Home/Home"
 import Login from "./views/Login/Login"
 import Signup from "./views/Signup/Signup"
 import AddTransaction from './views/AddTransaction/AddTransaction';
+import Frontpage from "./views/Frontpage/Frontpage"
+import Footer from './components/Footer/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -13,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>
+  },
+  {
+    path: "/home",
+    element: <Frontpage/>
   }, 
   {
     path: "/login",
@@ -25,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "/add-transaction",
     element: <AddTransaction/>
+  },
+  {
+    path: "/footer",
+    element: <Footer/>
   },
   {
     path: "*",

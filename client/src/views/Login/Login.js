@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import "./Login.css";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import { Link } from "react-router-dom";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -26,50 +27,53 @@ function Login() {
       setTimeout(() => {
         window.location.href = "/";
       }, 3000);
-    } 
-    
+    }
+
     else {
       toast.error(response.data.message);
     }
   };
 
   return (
-    <div className="background-image">
-      <h1 className="auth-heading">User Login</h1>
+    <>
+      <Navbar />
+      <div className="background-image">
+        <h1 className="auth-heading">User Login</h1>
 
-      <form className="auth-form">
-        <input
-          type="email"
-          placeholder="Enter Email"
-          className="auth-input"
-          value={email}
-          onChange={(e) => {
-            setEmail(e.target.value);
-          }}
-        />
+        <form className="auth-form">
+          <input
+            type="email"
+            placeholder="Enter Email"
+            className="auth-input"
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+          />
 
-        <input
-          type="password"
-          placeholder="Enter Password"
-          className="auth-input"
-          value={password}
-          onChange={(e) => {
-            setPassword(e.target.value);
-          }}
-        />
+          <input
+            type="password"
+            placeholder="Enter Password"
+            className="auth-input"
+            value={password}
+            onChange={(e) => {
+              setPassword(e.target.value);
+            }}
+          />
 
-        <button type="button" className="auth-btn" onClick={loginNow}>
-          Login Now
-        </button>
+          <button type="button" className="auth-btn" onClick={loginNow}>
+            Login Now
+          </button>
 
-        <Link to="/signup" className="auth-link">
-          Don't have an Account? Signup
-        </Link>
-      </form>
+          <Link to="/signup" className="auth-link">
+            Don't have an Account? Signup
+          </Link>
+        </form>
 
-      <Toaster />
-    </div>
-  );
+        <Toaster />
+      </div>
+      <Footer/>
+    </>);
 }
 
 export default Login;

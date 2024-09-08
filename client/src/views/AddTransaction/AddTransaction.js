@@ -2,6 +2,8 @@ import axios from "axios";
 import "./AddTransaction.css";
 import { useState, useEffect } from "react";
 import toast,{Toaster} from "react-hot-toast";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 function AddTransaction({}) {
   const [user, setUser] = useState("");
@@ -43,10 +45,11 @@ function AddTransaction({}) {
 
     setTimeout(() => {
       window.location.href = "/";
-    }, 2000);
+    }, 3000);
   };
 
-  return (
+  return (<>
+  <Navbar/>
     <div className="background-image">
       <h1 className="auth-heading">Transaction for {user.fullName}</h1>
 
@@ -111,7 +114,8 @@ function AddTransaction({}) {
 
       <Toaster/>
     </div>
-  );
+    <Footer/>
+    </>);
 }
 
 export default AddTransaction;
