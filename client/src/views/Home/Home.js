@@ -22,7 +22,7 @@ function Home() {
     }
 
     if(!currentUser){
-      window.location.href = '/login'
+      window.location.href = '/home'
     }
   }, [])
 
