@@ -42,6 +42,7 @@ const footerContainerStyle = {
     color: 'black',
     padding: '10px',
     textAlign: 'center',
+    marginTop: '50px',
     bottom: 0,
     left: 0,
 };
