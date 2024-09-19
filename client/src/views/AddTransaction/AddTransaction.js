@@ -98,13 +98,13 @@ function AddTransaction({}) {
           <option value="shopping">Shopping</option>
           <option value="health">Health</option>
           <option value="entertainment">Entertainment</option>
-          <option value="health">Utilities</option>
-          <option value="entertainment">Transportation</option>
+          <option value="utilities">Utilities</option>
+          <option value="transportation">Transportation</option>
           <option value="education">Education</option>
           <option value="gift">Gift</option>
           <option value="gadgets">Gadgets</option>
-          <option value="health">Rent</option>
-          <option value="entertainment">Salary</option>
+          <option value="rent">Rent</option>
+          <option value="salary">Salary</option>
         </select>
 
         <button type="button" className="auth-btn" onClick={addTransaction}>

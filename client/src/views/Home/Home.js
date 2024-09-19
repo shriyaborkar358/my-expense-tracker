@@ -121,7 +121,7 @@ function Home() {
       </div>
 
       <Link to='/add-transaction'>
-        <img src= {AddImg} className="transaction-icon" />
+        <img src= {AddImg} className="transaction-icon" alt="IconTransaction" />
       </Link>
 
       <Toaster />

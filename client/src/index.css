@@ -65,3 +65,31 @@ body{
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
+
+@media screen and (min-width: 350) and (min-width: 350) {
+  .auth-form {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px 30px;
+  }
+
+  .auth-input {
+    font-size: 18px;
+    margin: 20px auto;
+    width: 100%;
+  }
+
+  .auth-btn {
+    margin: 20px auto;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .auth-link {
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+  
+}
