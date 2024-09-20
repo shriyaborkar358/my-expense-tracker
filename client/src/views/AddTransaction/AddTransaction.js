@@ -1,5 +1,6 @@
 import axios from "axios";
 import "./AddTransaction.css";
+import "./../../index.css"
 import { useState, useEffect } from "react";
 import toast,{Toaster} from "react-hot-toast";
 import Navbar from "../../components/Navbar/Navbar";
@@ -75,7 +76,7 @@ function AddTransaction({}) {
         />
 
         <select
-          className="auth-input"
+          className="auth-input date-category" 
           type="text"
           value={type}
           onChange={(e) => {
@@ -87,7 +88,7 @@ function AddTransaction({}) {
         </select>
 
         <select
-          className="auth-input"
+          className="auth-input date-category"
           type="text"
           value={description}
           onChange={(e) => {
