@@ -91,5 +91,7 @@
 
   .transaction-icon {
     height: 45px;
+    bottom: 120px;
+    right: 43px;
   }
 }
