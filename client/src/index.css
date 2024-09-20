@@ -91,6 +91,20 @@ body{
   .date-category{
     width: 250px;
   }
+  }
+
+@media screen and (min-width: 350px) and (min-width: 550px) {
+  .auth-form {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px 30px;
+  }
+
+  .auth-input {
+    font-size: 18px;
+    margin: 20px auto;
+    width: 100%;
+  }
 
   .auth-btn {
     margin: 20px auto;
@@ -102,4 +116,11 @@ body{
     font-size: 15px;
     margin-bottom: 25px;
   }
+
+  .auth-link {
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+  
 }

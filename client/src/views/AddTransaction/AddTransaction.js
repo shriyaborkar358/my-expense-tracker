@@ -100,6 +100,7 @@ function AddTransaction({}) {
           <option value="health">Health</option>
           <option value="entertainment">Entertainment</option>
           <option value="health">Utilities</option>
+          <option value="utilities">Utilities</option>
           <option value="transportation">Transportation</option>
           <option value="education">Education</option>
           <option value="gift">Gift</option>
