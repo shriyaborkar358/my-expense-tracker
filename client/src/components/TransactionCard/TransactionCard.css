@@ -3,9 +3,14 @@
     background-color: #ffe6f3;
     display: block;
     margin: 25px auto;
-    padding: 10px 15px;
+    padding: 2px 15px;
     box-shadow: 0 0 5px gray;
     position: relative;
+    border-radius: 10px;
+}
+
+.transaction-title{
+    font-size: 30px;
 }
 
 .transaction-card-date{
@@ -36,11 +41,49 @@
     display: block;
     position: absolute;
     font-size: 16px;
-    bottom: 25px;
+    bottom: 20px;
     left: 250px;
     background-color: black;
     color: white;
     padding: 5px 20px;
     border: none;
     border-radius: 20px;
+}
+ 
+@media screen and (min-width: 350px) and (max-width: 550px ){
+    .transaction-card{
+        width: 80%;
+        margin: 15px auto;
+        padding: 1px 10px;
+    }
+
+    .transaction-title{
+        font-size: 18px;
+    }
+
+    .transaction-card-date{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .transaction-card-ammount{
+        font-size: 18px;
+        top: 15px;
+        right: 10px;
+    }
+    
+    .transaction-card-category{
+        bottom: 10px;
+        right: 10px;
+        font-size: 10px;
+        padding: 3px 10px; 
+    }
+    
+    .delete-transaction-btn{
+        font-size: 10px;
+        bottom: 42px;
+        left: 100px;
+        padding: 3px 10px;
+    }
+    
 }

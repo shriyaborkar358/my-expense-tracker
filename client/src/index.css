@@ -34,6 +34,10 @@ body{
   border-radius: 10px;
 }
 
+.date-category{
+  width: 460px;
+}
+
 .auth-input:focus,
 .auth-input:active {
   outline: none;
@@ -64,4 +68,38 @@ body{
   display: block;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 350px) and (max-width: 550px){
+  .auth-heading{
+    font-size: 20px;
+  }
+
+  .auth-form {
+    width: 250px;
+    margin: 20px auto;
+    padding: 15px 20px;
+  }
+
+  .auth-input {
+    font-size: 15px;
+    margin: 20px auto;
+    width: 90%;
+    padding: 7px 10px;
+  }
+
+  .date-category{
+    width: 250px;
+  }
+
+  .auth-btn {
+    margin: 20px auto;
+    font-size: 12px;
+    padding: 10px 25px;
+  }
+
+  .auth-link {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
 }

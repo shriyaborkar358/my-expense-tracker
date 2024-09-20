@@ -10,7 +10,7 @@ import Footer from "../../components/Footer/Footer"
 
 function Home() {
   const [user, setUser] = useState('')
-  const [transactions, setTransactions] = useState([])
+  const [transactions, setTransactions] = useState([ ])
   const [netIncome, setNetIncome] = useState(0)
   const [netExpense, setNetExpense] = useState(0)
 
@@ -48,7 +48,7 @@ function Home() {
     let income = 0
     let expense = 0
 
-    transactions.forEach((transaction)=>{
+    transactions?.forEach((transaction)=>{
       if(transaction.type=== 'Credit'){
         income += transaction.ammount
       }
@@ -103,7 +103,7 @@ function Home() {
 
       <div className='transactions-container'>
         {
-          transactions.map((transaction) => {
+          transactions?.map((transaction) => {
             const {_id, title, ammount, category, type, createdAt} = transaction
 
             return (<TransactionCard
@@ -121,7 +121,7 @@ function Home() {
       </div>
 
       <Link to='/add-transaction'>
-        <img src= {AddImg} className="transaction-icon" />
+        <img src= {AddImg} className="transaction-icon" alt="TransactionImg"/>
       </Link>
 
       <Toaster />

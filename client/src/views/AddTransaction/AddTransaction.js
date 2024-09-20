@@ -1,5 +1,6 @@
 import axios from "axios";
 import "./AddTransaction.css";
+import "./../../index.css"
 import { useState, useEffect } from "react";
 import toast,{Toaster} from "react-hot-toast";
 import Navbar from "../../components/Navbar/Navbar";
@@ -75,7 +76,7 @@ function AddTransaction({}) {
         />
 
         <select
-          className="auth-input"
+          className="auth-input date-category" 
           type="text"
           value={type}
           onChange={(e) => {
@@ -87,7 +88,7 @@ function AddTransaction({}) {
         </select>
 
         <select
-          className="auth-input"
+          className="auth-input date-category"
           type="text"
           value={description}
           onChange={(e) => {
@@ -99,12 +100,12 @@ function AddTransaction({}) {
           <option value="health">Health</option>
           <option value="entertainment">Entertainment</option>
           <option value="health">Utilities</option>
-          <option value="entertainment">Transportation</option>
+          <option value="transportation">Transportation</option>
           <option value="education">Education</option>
           <option value="gift">Gift</option>
           <option value="gadgets">Gadgets</option>
-          <option value="health">Rent</option>
-          <option value="entertainment">Salary</option>
+          <option value="rent">Rent</option>
+          <option value="salary">Salary</option>
         </select>
 
         <button type="button" className="auth-btn" onClick={addTransaction}>

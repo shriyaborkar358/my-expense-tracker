@@ -14,7 +14,7 @@ function TransactionCard({ _id, title, ammount, category, type, createdAt, loadT
 
   return (
     <div className="transaction-card">
-      <h1>{title}</h1>
+      <h1 className="transaction-title">{title}</h1>
 
       <div className="transaction-card-date">
         {new Date(createdAt).toLocaleString()}
