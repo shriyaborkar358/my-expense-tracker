@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./../../index.css"
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import { Link } from "react-router-dom";

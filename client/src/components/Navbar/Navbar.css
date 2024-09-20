@@ -7,7 +7,6 @@
   }
   
   .logo-container {
-    width: 13%;
     height: 100px;
     display: flex;
     justify-content: space-evenly;
@@ -65,7 +64,7 @@
   
   @media screen and (min-width:340px) and (max-width:500px){
     .log-name { 
-      font-size: 20px;
+      font-size: 18px;
       font-family: Georgia, 'Times New Roman', Times, serif;
     }
     .logo-icon{

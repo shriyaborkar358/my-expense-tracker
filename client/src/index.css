@@ -67,29 +67,37 @@ body{
 }
 
 
-@media screen and (min-width: 350px) and (min-width: 550px) {
+@media screen and (min-width:350px) and (max-width: 550px){ 
+  .auth-heading{
+    font-size: 20px;
+  }
+
   .auth-form {
-    width: 300px;
+    width: 250px;
     margin: 20px auto;
-    padding: 20px 30px;
+    padding: 15px 20px;
   }
 
   .auth-input {
-    font-size: 18px;
+    font-size: 15px;
     margin: 20px auto;
-    width: 100%;
+    width: 90%;
+    padding: 7px 10px;
+  }
+
+  .date-category{
+    width: 250px;
   }
 
   .auth-btn {
     margin: 20px auto;
-    font-size: 18px;
-    padding: 10px 20px;
+    font-size: 12px;
+    padding: 10px 25px;
   }
 
   .auth-link {
-    font-size: 20px;
-    margin-top: 12px;
-    margin-bottom: 20px;
-  }
-  
+    font-size: 15px;
+    margin-bottom: 25px;
+  }  
 }
+
