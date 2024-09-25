@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'; // Social Media Icons
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaFontAwesome } from 'react-icons/fa'; // Social Media Icons
 
 const Footer = () => {
     return (
@@ -7,7 +7,7 @@ const Footer = () => {
             <div style={footerSectionStyle}>
                 <div style={footerColumnStyle}>
                     <h3>Expense Tracker</h3>
-                    <p>Manage your expenses efficiently and easily.</p>
+                    <p style={linkStyle}>Manage your expenses efficiently and easily.</p>
                 </div>
 
                 <div style={footerColumnStyle}>
@@ -39,6 +39,7 @@ const Footer = () => {
 // Styling
 const footerContainerStyle = {
     backgroundColor: 'white',
+    fontFamily:'Franklin Gothic Medium', 
     color: 'black',
     padding: '10px',
     textAlign: 'center',
@@ -58,13 +59,13 @@ const footerSectionStyle = {
 
 const footerColumnStyle = {
     flex: '1',
-    minWidth: '200px',
+    minWidth: '170px',
     margin: '10px 0',
     fontSize: '20px',
 };
 
 const footerListStyle = {
-    fontSize: '20px',
+    fontSize: '17px',
     listStyleType: 'none',
     padding: 0,
 };
